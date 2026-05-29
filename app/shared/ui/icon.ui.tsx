@@ -1,15 +1,22 @@
 import Image from "next/image";
 
 type IconProps = {
-    src: string,
-    alt: string 
-}
+  src: string;
+  alt: string;
+  class?: string;
+};
 
 export default function CustomIcon(icon: IconProps) {
-    return (
-        <div className="w-8 h-8">
-   <Image src={icon.src} alt={icon.alt} width={50} height={50} unoptimized className="object-cover"></Image>
-        </div>
-          
-    )
-};
+  return (
+    <div className="">
+      <Image
+        src={icon.src}
+        alt={icon.alt}
+        width={50}
+        height={50}
+        unoptimized
+        className={`object-cover ${icon.class}`}
+      ></Image>
+    </div>
+  );
+}
