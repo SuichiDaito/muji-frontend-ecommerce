@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { IMAGES } from "@/app/constants/images";
 import CustomIcon from "../ui/icon.ui";

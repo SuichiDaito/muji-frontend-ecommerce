@@ -1,4 +1,4 @@
-import { defaultConfig } from "next/dist/server/config-shared";
+"use client";
 
 export default function Footer() {
   return (
